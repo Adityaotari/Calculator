@@ -70,6 +70,12 @@ public class main_activity extends Activity {
                     public void onClick(View v) {editText.setText(editText.getText()+"1"); }
                 }
         );
+        btn2.setOnClickListener(
+                new View.OnClickListener(){
+                    @Override
+                    public void onClick(View v) {editText.setText(editText.getText()+"2"); }
+                }
+        );
 
         btn3.setOnClickListener(
                 new View.OnClickListener(){
@@ -204,7 +210,7 @@ public class main_activity extends Activity {
         btnClear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                editText.setText("");
             }
 
         });
